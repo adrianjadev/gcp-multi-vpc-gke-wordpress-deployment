@@ -1,0 +1,8 @@
+project_id                = "your-gcp-project-id"
+region                    = "us-central1"
+zone                      = "us-central1-c"
+wp_db_password            = "ChangeMeStrongPassword!123"
+additional_engineer_email = "engineer@example.com"
+# Set to ["35.235.240.0/20"] for IAP-only SSH in production:
+bastion_ssh_source_ranges = ["0.0.0.0/0"]
+deletion_protection       = false
