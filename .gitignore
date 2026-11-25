@@ -1,0 +1,12 @@
+# Never commit GCP Service Account keys or local secrets
+key.json
+*-key.json
+*.pem
+.env
+
+# Ignore filled-in Kubernetes secret manifests (commit only .example)
+k8s/wp-env.yaml
+
+# OS & editor artifacts
+.DS_Store
+.vscode/
