@@ -7,6 +7,18 @@ key.json
 # Ignore filled-in Kubernetes secret manifests (commit only .example)
 k8s/wp-env.yaml
 
+# Terraform local cache, state files, and sensitive variable files
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!terraform.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+
 # OS & editor artifacts
 .DS_Store
 .vscode/
